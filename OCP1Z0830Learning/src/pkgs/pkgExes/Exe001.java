@@ -1,6 +1,6 @@
 package pkgs.pkgExes;
 
-
+import java.util.logging.Logger;
 
 public class Exe001 {
 
@@ -11,7 +11,9 @@ public class Exe001 {
 	}
 
 	private void go(String[] args) {
-		System.out.println("hw202604211425...");
+		var logger = Logger.getLogger("errors");
+		logger.info("Code is running");
+		logger.warning("Code shouldn't have done that");
 	}
 
 }

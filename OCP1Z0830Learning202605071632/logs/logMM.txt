@@ -1,0 +1,96 @@
+[s=abcde]
+[s=a
+	b
+  c
+d
+e]
+[s.translateEscapes()=a
+	b
+  c
+d
+e]
+[s=a
+	b
+  c
+d
+e]
+[s.translateEscapes()=a
+	b
+  c
+d
+e]
+[s=a\n\tb\n\s\sc\nd\ne]
+[s.translateEscapes()=a
+	b
+  c
+d
+e]
+[s=a
+	b
+  c
+d
+e]
+[s.translateEscapes()=a
+	b
+  c
+d
+e]
+[s=a
+	b
+ 	  c
+d
+e]
+[s.strip()=a
+	b
+ 	  c
+d
+e]
+[s.indent(-10)=a
+b
+c
+d
+e
+]
+[s.indent(-1)=a
+b
+	  c
+d
+e
+]
+[s.indent(10)=          a
+          	b
+           	  c
+          d
+          e
+]
+[s.indent(1)= a
+ 	b
+  	  c
+ d
+ e
+]
+[s.stripIndent()=a
+	b
+ 	  c
+d
+e]
+[s.strip()=a
+	b
+ 	  c
+d
+e]
+[s= a
+	b
+ 	  c
+d
+e ]
+[s.trim()=a
+	b
+ 	  c
+d
+e]
+[s.strip()=a
+	b
+ 	  c
+d
+e]

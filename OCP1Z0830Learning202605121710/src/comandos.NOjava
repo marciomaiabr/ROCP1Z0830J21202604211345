@@ -1,0 +1,108 @@
+
+
+cd C:\Users\Administrador\git\ROCP1Z0830J21202604211345\OCP1Z0830Learning
+
+
+
+
+cls
+
+rmdir bin /s /q
+rmdir mods /s /q
+
+del *.class /s/q
+del *.jar /s/q
+
+mkdir bin\feeding
+mkdir bin\care
+mkdir bin\talks
+mkdir bin\staff
+mkdir bin\serviceLocatorModule
+mkdir bin\consumerModule
+mkdir bin\serviceProviderInterfaceModule
+mkdir mods
+
+javac -p mods -d bin/feeding src/feeding/zoo/animal/feeding/*.java src/feeding/module-info.java
+jar -cvf mods/zoo.animal.feeding.jar -C bin/feeding/ .
+javac -p mods -d bin/care src/care/zoo/animal/care/details/*.java src/care/zoo/animal/care/medical/*.java src/care/module-info.java
+jar -cvf mods/zoo.animal.care.jar -C bin/care/ .
+javac -p mods -d bin/talks src/talks/zoo/animal/talks/content/*.java src/talks/zoo/animal/talks/media/*.java src/talks/zoo/animal/talks/schedule/*.java src/talks/module-info.java
+jar -cvf mods/zoo.animal.talks.jar -C bin/talks/ .
+javac -p mods -d bin/staff src/staff/zoo/staff/*.java src/staff/module-info.java
+jar -cvf mods/zoo.staff.jar -C bin/staff/ .
+javac -d bin/serviceProviderInterfaceModule src/serviceProviderInterfaceModule/zoo/tours/api/*.java src/serviceProviderInterfaceModule/module-info.java
+jar -cvf mods/zoo.tours.api.jar -C bin/serviceProviderInterfaceModule/ .
+javac -p mods -d bin/serviceLocatorModule src/serviceLocatorModule/zoo/tours/reservations/*.java src/serviceLocatorModule/module-info.java
+jar -cvf mods/zoo.tours.reservations.jar -C bin/serviceLocatorModule/ .
+javac -p mods -d bin/consumerModule src/consumerModule/zoo/visitor/*.java src/consumerModule/module-info.java
+jar -cvf mods/zoo.visitor.jar -C bin/consumerModule/ .
+
+java -p mods -m zoo.visitor/zoo.visitor.Tourist
+
+
+
+
+
+
+cls
+
+rmdir bin /s /q
+rmdir mods /s /q
+
+del *.class /s/q
+del *.jar /s/q
+
+mkdir bin\feeding
+mkdir bin\care
+mkdir bin\talks
+mkdir bin\staff
+mkdir bin\serviceLocatorModule
+mkdir bin\consumerModule
+mkdir bin\serviceProviderModule
+mkdir bin\serviceProviderInterfaceModule
+mkdir mods
+
+javac -p mods -d bin/feeding src/feeding/zoo/animal/feeding/*.java src/feeding/module-info.java
+jar -cvf mods/zoo.animal.feeding.jar -C bin/feeding/ .
+javac -p mods -d bin/care src/care/zoo/animal/care/details/*.java src/care/zoo/animal/care/medical/*.java src/care/module-info.java
+jar -cvf mods/zoo.animal.care.jar -C bin/care/ .
+javac -p mods -d bin/talks src/talks/zoo/animal/talks/content/*.java src/talks/zoo/animal/talks/media/*.java src/talks/zoo/animal/talks/schedule/*.java src/talks/module-info.java
+jar -cvf mods/zoo.animal.talks.jar -C bin/talks/ .
+javac -p mods -d bin/staff src/staff/zoo/staff/*.java src/staff/module-info.java
+jar -cvf mods/zoo.staff.jar -C bin/staff/ .
+javac -d bin/serviceProviderInterfaceModule src/serviceProviderInterfaceModule/zoo/tours/api/*.java src/serviceProviderInterfaceModule/module-info.java
+jar -cvf mods/zoo.tours.api.jar -C bin/serviceProviderInterfaceModule/ .
+javac -p mods -d bin/serviceLocatorModule src/serviceLocatorModule/zoo/tours/reservations/*.java src/serviceLocatorModule/module-info.java
+jar -cvf mods/zoo.tours.reservations.jar -C bin/serviceLocatorModule/ .
+javac -p mods -d bin/consumerModule src/consumerModule/zoo/visitor/*.java src/consumerModule/module-info.java
+jar -cvf mods/zoo.visitor.jar -C bin/consumerModule/ .
+javac -p mods -d bin/serviceProviderModule src/serviceProviderModule/zoo/tours/agency/*.java src/serviceProviderModule/module-info.java
+jar -cvf mods/zoo.tours.agency.jar -C bin/serviceProviderModule/ .
+
+java -p mods -m zoo.visitor/zoo.visitor.Tourist
+
+
+
+
+
+
+cls
+
+javac -p mods -d bin/feeding src/feeding/zoo/animal/feeding/*.java src/feeding/module-info.java
+jar -cvf mods/zoo.animal.feeding.jar -C bin/feeding/ .
+javac -p mods -d bin/care src/care/zoo/animal/care/details/*.java src/care/zoo/animal/care/medical/*.java src/care/module-info.java
+jar -cvf mods/zoo.animal.care.jar -C bin/care/ .
+javac -p mods -d bin/talks src/talks/zoo/animal/talks/content/*.java src/talks/zoo/animal/talks/media/*.java src/talks/zoo/animal/talks/schedule/*.java src/talks/module-info.java
+jar -cvf mods/zoo.animal.talks.jar -C bin/talks/ .
+javac -p mods -d bin/staff src/staff/zoo/staff/*.java src/staff/module-info.java
+jar -cvf mods/zoo.staff.jar -C bin/staff/ .
+javac -d bin/serviceProviderInterfaceModule src/serviceProviderInterfaceModule/zoo/tours/api/*.java src/serviceProviderInterfaceModule/module-info.java
+jar -cvf mods/zoo.tours.api.jar -C bin/serviceProviderInterfaceModule/ .
+javac -p mods -d bin/serviceLocatorModule src/serviceLocatorModule/zoo/tours/reservations/*.java src/serviceLocatorModule/module-info.java
+jar -cvf mods/zoo.tours.reservations.jar -C bin/serviceLocatorModule/ .
+javac -p mods -d bin/consumerModule src/consumerModule/zoo/visitor/*.java src/consumerModule/module-info.java
+jar -cvf mods/zoo.visitor.jar -C bin/consumerModule/ .
+javac -p mods -d bin/serviceProviderModule src/serviceProviderModule/zoo/tours/agency/*.java src/serviceProviderModule/module-info.java
+jar -cvf mods/zoo.tours.agency.jar -C bin/serviceProviderModule/ .
+
+java -p mods -m zoo.visitor/zoo.visitor.Tourist
